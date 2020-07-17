@@ -16,8 +16,9 @@ function App() {
 							<a href="#personal-bio">Contactos</a>
 						</div>
 					</header>
+
 					<div className="banner-content">
-						<div className="banner-text-container">
+						<div className="banner-text-container col-sm-12 col-md-6">
 							<h1>
 								Web Developer <br /> &Marketing
 							</h1>
@@ -27,7 +28,7 @@ function App() {
 							</p>
 							<button className="cta-banner">Portfolio</button>
 						</div>
-						<div className="banner-photo">
+						<div className="banner-photo col-sm-12 col-md-6">
 							<svg
 								className="gradient-square"
 								width="400"
@@ -45,33 +46,64 @@ function App() {
 									</linearGradient>
 								</defs>
 							</svg>
-							<img src="linkedinpic-min.jpg" alt="" className="photo" />
+							<img src="linkedinpic-min.jpg" width="100%" alt="" className="photo" />
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div className="section-container" id="personal-bio">
-				<div className="blob-container">
-					<img src="hugo_cut.png" alt="" className="mask" />
-
+			<div className="section-container " id="personal-bio">
+				<div className="blob-container col-sm-12 col-lg-6">
 					<svg
-						className="blob"
-						width="632"
-						height="662"
-						viewBox="0 0 632 662"
+						className="blob-svg"
+						width="100%"
+						height="100%"
+						viewBox="300 400 1000 1000"
 						fill="none"
 						xmlns="http://www.w3.org/2000/svg"
+						xmlnsXlink="http://www.w3.org/1999/xlink"
 					>
-						<path
-							d="M509.485 170.902C526.315 240.106 518.395 290.35 524.335 324.952C530.275 359.554 549.58 378.514 575.815 411.22C601.555 444.4 634.225 491.8 631.75 532.09C629.275 572.38 592.15 606.034 549.085 616.462C506.515 626.89 457.51 614.092 402.565 624.994C347.62 635.422 286.24 669.076 241.69 659.596C197.635 649.642 170.905 596.554 124.87 545.836C78.835 494.644 13.4951 445.822 2.11005 390.838C-8.77995 335.854 33.79 274.708 82.795 227.782C131.305 180.856 185.755 148.624 240.7 100.75C296.14 52.8759 352.57 -10.6401 401.575 1.68394C450.58 13.5339 492.655 101.698 509.485 170.902Z"
-							fill="#FEF701"
-						/>
+						<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="309" y="395" width="1000" height="1200">
+							<path
+								d="M1130.22 564.016C1194.19 646.346 1235.91 707.527 1234.98 765.687C1234.06 824.602 1188.63 879.741 1189.56 968.113C1189.56 1057.24 1235.91 1179.6 1195.12 1250.6C1154.33 1322.36 1025.46 1343.51 911.421 1328.4C796.459 1313.3 695.403 1261.18 587.857 1206.79C480.312 1153.17 366.276 1097.27 326.41 1016.45C285.617 935.634 318.993 830.645 400.58 772.485C481.239 715.081 611.035 704.506 701.893 628.974C792.75 554.197 844.669 415.218 913.275 397.09C981.882 378.963 1066.25 482.442 1130.22 564.016Z"
+								fill="#FEF701"
+								id="blob-path"
+							/>
+						</mask>
+						<g mask="url(#mask0)">
+							<rect x="186" y="307" width="1355" height="1355" fill="url(#pattern0)" overflow="hidden" />
+						</g>
+						<defs>
+							<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+								<use xlinkHref="#photo-in-blob" transform="scale(0.00111607)" />
+							</pattern>
+							<image id="photo-in-blob" width="896" height="896" href="hugo_cut.png" />
+						</defs>
 					</svg>
 				</div>
-				<h3> Sobre mim </h3>
+				<div className="about-container col-sm-12 col-lg-6">
+					<div className="about-title">
+						<h2> Sobre mim </h2>
+						<div className="small-rectangle"> </div>
+						<div className="small-ellipsis"> </div>
+					</div>
+					<div className="about-text">
+						<p>
+							Programo maioritariamente em Ruby e Ruby on Rails, e dependendo das necessidades do cliente trabalho com
+							wordpress e wix.Tenho também experiência com marketing digital, (SEO, SEM, e gestão de redes sociais
+							incluindo produção de videos simples e design). Tenho um grande interesse na internet e em entender todos
+							os componentes necessárias para criar um projecto digital. Estudei Web Development no LeWagon Bootcamp em
+							Lisboa e tenho trabalhado como freelancer desde então. No meu tempo livre ando de skate, toco música e
+							estudo media, tecnologia e marketing.
+						</p>
+					</div>
+				</div>
 			</div>
-			<div className="section-container" id="skills" />
+			<div className="section-container" id="tech-section">
+				<div className="skills-title">
+					<h2> Tech Stack </h2>
+				</div>
+			</div>
 			<div className="section-container"> </div>
 		</div>
 	);
