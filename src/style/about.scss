@@ -9,14 +9,12 @@
 
 .blob-container {
 	padding: 0px;
-	min-width: 500px;
 	text-align: center;
 	margin-top: 40px;
 	margin-bottom: -40px;
 	.blob-svg {
-		width: 80%;
+		width: 60% !important;
 		height: calc(100% + 20px);
-		max-width: 500px;
 	}
 
 	#blob-path {
@@ -25,7 +23,7 @@
 }
 .about-container {
 	text-align: center;
-	padding: 70px;
+	padding: calc(15px + (70 - 15) * ((100vw - 300px) / (1600 - 300)));
 	margin-top: 60px;
 	.about-title {
 		z-index: 10;
@@ -88,12 +86,18 @@
 	}
 
 	.blob-container {
-		width: 600px;
 		.blob-svg {
 			width: 20%;
 		}
 
 		#blob-path {
+		}
+	}
+	.about-container {
+		.about-text {
+			p {
+				font-size: 16px;
+			}
 		}
 	}
 }
