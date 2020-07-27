@@ -11,6 +11,7 @@ class App extends Component {
 		// console.log(this.state.filterStack);
 		const clicked = stack.target.innerHTML;
 		// console.log(stack.target.innerHTML);
+		console.log(this.state.filterStack);
 		const stackIndex = this.state.filterStack.indexOf(clicked);
 		let stackArray = this.state.filterStack;
 		if (stackIndex < 0) {
@@ -18,6 +19,7 @@ class App extends Component {
 		} else {
 			stackArray.splice(stackIndex, 1);
 		}
+		console.log(stackArray);
 		this.setState({ filterStack: stackArray });
 	};
 
@@ -65,7 +67,7 @@ class App extends Component {
 										</linearGradient>
 									</defs>
 								</svg>
-								<img src="linkedinpic-min.jpg" width="100%" alt="" className="photo" />
+								<img src={require('./images/linkedinpic-min.jpg')} width="100%" alt="asdf" className="photo" />
 							</div>
 						</div>
 					</div>
@@ -96,7 +98,7 @@ class App extends Component {
 								<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 									<use xlinkHref="#photo-in-blob" transform="scale(0.00111607)" />
 								</pattern>
-								<image id="photo-in-blob" width="896" height="896" href="hugo_cut.png" />
+								<image id="photo-in-blob" width="896" height="896" href={require('./images/hugo_cut.png')} />
 							</defs>
 						</svg>
 					</div>
@@ -113,7 +115,7 @@ class App extends Component {
 								incluindo produção de videos simples e design). Tenho um grande interesse na internet e em entender
 								todos os componentes necessárias para criar um projecto digital. Estudei Web Development no LeWagon
 								Bootcamp em Lisboa e tenho trabalhado como freelancer desde então. No meu tempo livre ando de skate,
-								toco música e estudo media, sdtecnologia e marketing.
+								toco música e estudo media, tecnologia e marketing.
 							</p>
 						</div>
 					</div>
@@ -127,12 +129,12 @@ class App extends Component {
 						<Button stack="Designer" handleClick={this.handleClick} />
 						<Button stack="Marketing" handleClick={this.handleClick} />
 					</div>
-					<Hello name="Hugo" />
+					<Hello name="Hugo" filterStack={this.state.filterStack} />
 				</div>
 				<div className="section-container" id="portfolio-section">
 					<h2> My Work </h2>
 					<div className="work-container">
-						<h3> Title of job </h3>
+						<h3> Title of job</h3>
 					</div>
 				</div>
 			</div>
