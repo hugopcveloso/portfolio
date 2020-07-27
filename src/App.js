@@ -113,7 +113,7 @@ class App extends Component {
 								incluindo produção de videos simples e design). Tenho um grande interesse na internet e em entender
 								todos os componentes necessárias para criar um projecto digital. Estudei Web Development no LeWagon
 								Bootcamp em Lisboa e tenho trabalhado como freelancer desde então. No meu tempo livre ando de skate,
-								toco música e estudo media, tecnologia e marketing.
+								toco música e estudo media, sdtecnologia e marketing.
 							</p>
 						</div>
 					</div>
@@ -132,7 +132,7 @@ class App extends Component {
 				<div className="section-container" id="portfolio-section">
 					<h2> My Work </h2>
 					<div className="work-container">
-						<h3> Title of job</h3>
+						<h3> Title of job </h3>
 					</div>
 				</div>
 			</div>
