@@ -23,7 +23,7 @@ class List extends Component {
 			}
 		};
 
-		const stackList = filteringArrays(filterStack).map((tech) => <Tech tech={tech} />);
+		const stackList = filteringArrays(filterStack).map((tech) => <Tech tech={tech} key={tech.id} />);
 
 		return <div className="stack-list"> {stackList} </div>;
 	}
