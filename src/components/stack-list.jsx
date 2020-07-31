@@ -1,132 +1,31 @@
 import React, { Component } from 'react';
 import Tech from './tech';
-
-const techList = [
-	{
-		id: 1,
-		name: 'HTML',
-		url: 'https://cdn.worldvectorlogo.com/logos/html5.svg',
-		tags: [ 'Developer' ]
-	},
-	{
-		id: 2,
-		name: 'Javascript',
-		url: 'https://cdn.worldvectorlogo.com/logos/javascript.svg',
-		tags: [ 'Developer' ]
-	},
-	{
-		id: 3,
-		name: 'CSS',
-		url: 'https://cdn.worldvectorlogo.com/logos/css-5.svg',
-		tags: [ 'Developer' ]
-	},
-	{
-		id: 4,
-		name: 'Ruby',
-		url: 'https://cdn.worldvectorlogo.com/logos/ruby.svg',
-		tags: [ 'Developer' ]
-	},
-	{
-		id: 5,
-		name: 'Rails',
-		url: 'https://cdn.worldvectorlogo.com/logos/rails.svg',
-		tags: [ 'Developer' ]
-	},
-	{
-		id: 6,
-		name: 'Github',
-		url: 'https://cdn.worldvectorlogo.com/logos/github-1.svg',
-		tags: [ 'Developer' ]
-	},
-	{
-		id: 7,
-		name: 'Wordpress',
-		url: 'https://cdn.worldvectorlogo.com/logos/wordpress-blue.svg',
-		tags: [ 'Developer' ]
-	},
-	{
-		id: 8,
-		name: 'Bootstrap',
-		url: 'https://cdn.worldvectorlogo.com/logos/bootstrap-4.svg',
-		tags: [ 'Developer' ]
-	},
-	{
-		id: 9,
-		name: 'Illustrator',
-		url: 'https://cdn.worldvectorlogo.com/logos/adobe-illustrator-cc.svg',
-		tags: [ 'Designer' ]
-	},
-	{
-		id: 10,
-		name: 'React',
-		url: 'https://cdn.worldvectorlogo.com/logos/react.svg',
-		tags: [ 'Developer' ]
-	},
-	{
-		id: 11,
-		name: 'PostgreSQL',
-		url: 'https://cdn.worldvectorlogo.com/logos/postgresql.svg',
-		tags: [ 'Developer' ]
-	},
-	{
-		id: 12,
-		name: 'MySQL',
-		url: 'https://cdn.worldvectorlogo.com/logos/mysql.svg',
-		tags: [ 'Developer' ]
-	},
-	{
-		id: 13,
-		name: 'Figma',
-		url: 'https://cdn.worldvectorlogo.com/logos/figma-1.svg',
-		tags: [ 'Designer', 'Developer' ]
-	},
-	{
-		id: 14,
-		name: 'Premiere Pro',
-		url: 'https://cdn.worldvectorlogo.com/logos/premiere-cc.svg',
-		tags: [ 'Designer' ]
-	},
-	{
-		id: 15,
-		name: 'Photoshop',
-		url: 'https://cdn.worldvectorlogo.com/logos/photoshop-cc.svg',
-		tags: [ 'Designer' ]
-	},
-	{
-		id: 16,
-		name: 'Google Analytics',
-		url: 'https://cdn.worldvectorlogo.com/logos/google-analytics-3.svg',
-		tags: [ 'Marketing' ]
-	},
-	{
-		id: 17,
-		name: 'Facebook Ads',
-		url: 'https://cdn.worldvectorlogo.com/logos/facebook-3.svg',
-		tags: [ 'Marketing' ]
-	},
-	{
-		id: 18,
-		name: 'Instagram Ads',
-		url: 'https://cdn.worldvectorlogo.com/logos/instagram-2-1.svg',
-		tags: [ 'Marketing' ]
-	}
-];
-
+import techList from '../data/stack-data';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 // Acabar de fazer filtros para os respectivos stacks
-class Hello extends Component {
-	state = { clicked: false };
-
+class List extends Component {
 	render() {
 		const { filterStack } = this.props;
- 		const filtered = filterStack.filter(function(tech) {
-			if(tech == 'Marketing'){
-
+		const filteringArrays = (filter) => {
+			if (filter.length === 0 || filter.length === 3) {
+				return techList;
+			}
+			if (filter.length === 1) {
+				return techList.filter((d) => d.tags.includes(filter[0]));
+			}
+			if (filter.length === 2 && filter.indexOf('Marketing') < 0) {
+				return techList.filter((d) => !d.tags.includes('Marketing'));
+			} else if (filter.length === 2 && filter.indexOf('Developer') < 0) {
+				return techList.filter((d) => !d.tags.includes('Developer'));
+			} else if (filter.length === 2 && filter.indexOf('Designer') < 0) {
+				return techList.filter((d) => !d.tags.includes('Designer'));
 			}
 		};
-		const stackList = techList.map((tech) => <Tech tech={tech} />);
+
+		const stackList = filteringArrays(filterStack).map((tech) => <Tech tech={tech} />);
 
 		return <div className="stack-list"> {stackList} </div>;
 	}
 }
 
-export default Hello;
+export default List;

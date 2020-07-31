@@ -1,17 +1,13 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './style/App.scss';
-import Hello from './components/stack-list';
+import List from './components/stack-list';
 import Button from './components/button';
 
 class App extends Component {
-	state = { clicked: false, filterStack: [] };
-
+	state = { filterStack: [] };
 	handleClick = (stack) => {
-		// console.log(this.state.filterStack);
-		const clicked = stack.target.innerHTML;
-		// console.log(stack.target.innerHTML);
-		console.log(this.state.filterStack);
+		const clicked = stack;
 		const stackIndex = this.state.filterStack.indexOf(clicked);
 		let stackArray = this.state.filterStack;
 		if (stackIndex < 0) {
@@ -19,7 +15,6 @@ class App extends Component {
 		} else {
 			stackArray.splice(stackIndex, 1);
 		}
-		console.log(stackArray);
 		this.setState({ filterStack: stackArray });
 	};
 
@@ -129,7 +124,7 @@ class App extends Component {
 						<Button stack="Designer" handleClick={this.handleClick} />
 						<Button stack="Marketing" handleClick={this.handleClick} />
 					</div>
-					<Hello name="Hugo" filterStack={this.state.filterStack} />
+					<List name="Hugo" filterStack={this.state.filterStack} />
 				</div>
 				<div className="section-container" id="portfolio-section">
 					<h2> My Work </h2>

@@ -5,8 +5,22 @@ class Button extends Component {
 
 	render() {
 		const { stack, handleClick } = this.props;
-
-		return <h5 onClick={handleClick}>{stack}</h5>;
+		const highlight = () => {
+			this.setState({
+				clicked: !this.state.clicked
+			});
+		};
+		return (
+			<h5
+				className={this.state.clicked ? 'active-button btn-stack' : 'btn-stack'}
+				onClick={() => {
+					handleClick(stack);
+					highlight();
+				}}
+			>
+				{stack}
+			</h5>
+		);
 	}
 }
 

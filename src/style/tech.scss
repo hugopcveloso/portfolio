@@ -1,6 +1,6 @@
 #tech-section {
 	background-color: white;
-	height: auto;
+	height: 90vh;
 	margin-bottom: 40px;
 	text-align: center;
 	h2 {
@@ -26,11 +26,45 @@
 }
 
 .tech-item {
+	transition: 1s ease-in;
 	justify-self: center;
 	align-self: end;
 	h5 {
 		margin-top: 5px;
 		font-size: 20px;
+	}
+}
+.btn-stack {
+	cursor: pointer;
+}
+.active-button {
+	padding: 10px;
+	transition: all 1s;
+	background-color: yellow;
+}
+
+// REACT TRANSITIONS
+
+.fade-appear {
+	opacity: 1;
+	z-index: 1;
+}
+
+.fade-appear {
+	.fade-appear-active {
+		opacity: 1;
+		transition: opacity 300ms linear;
+	}
+}
+.fade-enter {
+	opacity: 1;
+	z-index: 1;
+}
+
+.fade-enter {
+	.fade-enter-active {
+		opacity: 1;
+		transition: opacity 300ms linear;
 	}
 }
 
