@@ -6,6 +6,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 class List extends Component {
 	render() {
 		const { filterStack } = this.props;
+
 		const filteringArrays = (filter) => {
 			if (filter.length === 0 || filter.length === 3) {
 				return techList;

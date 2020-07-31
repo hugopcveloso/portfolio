@@ -1,6 +1,7 @@
 #tech-section {
 	background-color: white;
-	height: 90vh;
+	height: auto;
+	min-height: 90vh;
 	margin-bottom: 40px;
 	text-align: center;
 	h2 {
@@ -34,10 +35,47 @@
 		font-size: 20px;
 	}
 }
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in-out;
+	animation-duration: 2s;
+	transform: translateY(10%);
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.fade-out {
+	animation: fadeOut ease 8s;
+	-webkit-animation: fadeOut ease 8s;
+	-moz-animation: fadeOut ease 8s;
+	-o-animation: fadeOut ease 8s;
+	-ms-animation: fadeOut ease 8s;
+}
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
 .btn-stack {
 	cursor: pointer;
+	margin: 10px;
 }
 .active-button {
+	margin: 0px;
 	padding: 10px;
 	transition: all 1s;
 	background-color: yellow;
@@ -71,5 +109,29 @@
 @media (max-width: 600px) {
 	.stack-list {
 		width: 100%;
+	}
+	.btn-stack {
+		font-size: 14px;
+	}
+	.tech-logo-image {
+		height: 50px;
+	}
+	.stack-list {
+		margin: 0 auto;
+		margin-top: 60px;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+		grid-gap: 30px;
+	}
+
+	.tech-item {
+		height: 80px;
+		transition: 1s ease-in;
+		justify-self: center;
+		align-self: end;
+		h5 {
+			margin-top: 5px;
+			font-size: 15px;
+		}
 	}
 }

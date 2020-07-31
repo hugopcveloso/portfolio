@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './style/App.scss';
 import List from './components/stack-list';
 import Button from './components/button';
+import WorkList from './components/work-list';
 
 class App extends Component {
 	state = { filterStack: [] };
@@ -128,8 +129,8 @@ class App extends Component {
 				</div>
 				<div className="section-container" id="portfolio-section">
 					<h2> My Work </h2>
-					<div className="work-container">
-						<h3> Title of job</h3>
+					<div id="work-list-container">
+						<WorkList />
 					</div>
 				</div>
 			</div>

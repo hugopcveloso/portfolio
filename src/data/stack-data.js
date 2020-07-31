@@ -9,13 +9,13 @@ const techList = [
 		id: 2,
 		name: 'Javascript',
 		url: 'https://cdn.worldvectorlogo.com/logos/javascript.svg',
-		tags: [ 'Developer' ]
+		tags: [ 'Developer', 'Designer' ]
 	},
 	{
 		id: 3,
 		name: 'CSS',
 		url: 'https://cdn.worldvectorlogo.com/logos/css-5.svg',
-		tags: [ 'Developer' ]
+		tags: [ 'Developer', 'Designer' ]
 	},
 	{
 		id: 4,
