@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 class Tech extends Component {
 	state = { appearTech: false };
@@ -11,10 +12,12 @@ class Tech extends Component {
 			});
 		};
 		return (
-			<div className="tech-item" id={id}>
-				<img src={url} alt="" className="tech-logo-image" />
-				<h5 className="tech-name">{name}</h5>
-			</div>
+			<CSSTransition in={toggleAppear} appear={true} timeout={1600} className="fade">
+				<div className="tech-item" id={id}>
+					<img src={url} alt="" className="tech-logo-image" />
+					<h5 className="tech-name">{name}</h5>
+				</div>
+			</CSSTransition>
 		);
 	}
 }
