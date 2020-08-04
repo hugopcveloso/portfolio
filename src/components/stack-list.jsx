@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Tech from './tech';
 import techList from '../data/stack-data';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
 // Acabar de fazer filtros para os respectivos stacks
 class List extends Component {
 	render() {

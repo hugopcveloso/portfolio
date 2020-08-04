@@ -9,13 +9,13 @@ const techList = [
 		id: 2,
 		name: 'Javascript',
 		url: 'https://cdn.worldvectorlogo.com/logos/javascript.svg',
-		tags: [ 'Developer', 'Designer' ]
+		tags: [ 'Developer' ]
 	},
 	{
 		id: 3,
 		name: 'CSS',
 		url: 'https://cdn.worldvectorlogo.com/logos/css-5.svg',
-		tags: [ 'Developer', 'Designer' ]
+		tags: [ 'Developer' ]
 	},
 	{
 		id: 4,
@@ -75,7 +75,7 @@ const techList = [
 		id: 13,
 		name: 'Figma',
 		url: 'https://cdn.worldvectorlogo.com/logos/figma-1.svg',
-		tags: [ 'Designer', 'Developer' ]
+		tags: [ 'Designer' ]
 	},
 	{
 		id: 14,

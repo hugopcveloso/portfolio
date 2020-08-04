@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
 import './style/App.scss';
 import List from './components/stack-list';
 import Button from './components/button';
@@ -28,8 +27,8 @@ class App extends Component {
 							<h1>H</h1>
 							<div className="nav-links">
 								<a href="#personal-bio">About</a>
-								<a href="#personal-bio">Skills</a>
-								<a href="#personal-bio">Work</a>
+								<a href="#tech-section">Skills</a>
+								<a href="#portfolio-section">Work</a>
 								<a href="#personal-bio">Contactos</a>
 							</div>
 						</header>
@@ -43,7 +42,9 @@ class App extends Component {
 									Olá, o meu nome é Hugo Veloso, e crio soluções digitais para pequenas empresas, desde desenvolvimento
 									de websites a marketing digital.
 								</p>
-								<button className="cta-banner">Portfolio</button>
+								<a href="#portfolio-section" className="cta-banner">
+									Portfolio
+								</a>
 							</div>
 							<div className="banner-photo col-md-12 col-lg-6">
 								<svg
@@ -128,7 +129,7 @@ class App extends Component {
 					<List name="Hugo" filterStack={this.state.filterStack} />
 				</div>
 				<div className="section-container" id="portfolio-section">
-					<h2> My Work </h2>
+					<h2 className="portfolio-title"> My Work </h2>
 					<div id="work-list-container">
 						<WorkList />
 					</div>
