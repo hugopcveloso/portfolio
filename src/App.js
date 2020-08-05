@@ -109,13 +109,14 @@ class App extends Component {
 							<p>
 								Sempre tive um grande interesse na internet e no seu potencial para criar e divulgar projectos e ideias.
 								Este interesse motivou-me a aprender todas as áreas necessárias para a criação e manutenção de projectos
-								digitais, e fui começando a trabalhar como freelancer em CMS Development, design e marketing digital. Em
-								2020 decidi fazer um curso de "Full Stack Web Developer", no LeWagon Coding Bootcamp, em Lisboa e
-								tenho-me focado mais em programação. Programo maioritariamente em Ruby e Ruby on Rails e React e
-								dependendo das necessidades do cliente trabalho também com Wordpress e wix. Tenho também experiência com
-								marketing digital, (SEO, SEM, e gestão de redes sociais incluindo produção de videos e design gráfico).
-								No meu tempo livre ando de skate, viajo, toco guitarra e baixo, vejo filmes e séries e estudo media,
-								tecnologia e marketing.
+								digitais, e fui assim começando a trabalhar como freelancer em CMS Development, design e marketing
+								digital.
+								<br /> Em 2020 decidi fazer um curso de "Full Stack Web Developer" no LeWagon Coding Bootcamp, em
+								Lisboa, e tenho-me focado mais em programação desde então. <br />
+								Programo maioritariamente em Ruby e Ruby on Rails e React e dependendo das necessidades do cliente
+								trabalho também com Wordpress e wix. Tenho também experiência com marketing digital, (SEO, SEM, e gestão
+								de redes sociais incluindo produção de videos e design gráfico). No meu tempo livre ando de skate,
+								viajo, toco guitarra e baixo, vejo filmes e séries e estudo media, tecnologia e marketing.
 							</p>
 						</div>
 					</div>
