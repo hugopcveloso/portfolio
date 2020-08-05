@@ -1,0 +1,53 @@
+.burguer-menu {
+	color: white;
+	z-index: 10;
+	display: none;
+	cursor: pointer;
+}
+
+.sidebar-open {
+	position: absolute;
+	background-color: black;
+	padding-top: 50px;
+	position: fixed;
+	right: 0;
+	width: 60vw;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	z-index: 20;
+	a {
+		font-size: 30px;
+		color: white;
+		padding-left: 30px;
+		padding: 20px 20px 20px 20px;
+		&:hover {
+			font-weight: bold;
+			text-decoration: none;
+			background-color: yellow;
+			color: black;
+			transition: background-color 1s ease-in-out;
+			transition: color 0.2s ease-in-out;
+		}
+	}
+}
+.show {
+	visibility: visible;
+	opacity: 1;
+}
+.hidden {
+	transition: visibility 0.5s, opacity 0.5s linear;
+	visibility: hidden !important;
+	opacity: 0;
+}
+
+@media (max-width: 600px) {
+	.nav-links {
+		a {
+			display: none;
+		}
+	}
+	.burguer-menu {
+		display: block;
+	}
+}

@@ -4,9 +4,10 @@ import List from './components/stack-list';
 import Button from './components/button';
 import WorkList from './components/work-list';
 import MyForm from './components/form';
+import ToggleButtonNav from './components/sidebar-button';
 
 class App extends Component {
-	state = { filterStack: [] };
+	state = { filterStack: [], showsidenav: 'hidden' };
 	handleClick = (stack) => {
 		const clicked = stack;
 		const stackIndex = this.state.filterStack.indexOf(clicked);
@@ -18,23 +19,36 @@ class App extends Component {
 		}
 		this.setState({ filterStack: stackArray });
 	};
+	toggleSideNav = () => {
+		const css = this.state.showsidenav === 'hidden' ? 'show' : 'hidden';
+		this.setState({ showsidenav: css });
+	};
 
+	closeSidebar = () => {
+		this.setState({ showsidenav: 'hidden' });
+	};
 	render() {
 		return (
 			<div className="App">
+				<div onClick={this.closeSidebar} className={'sidebar-open' + ' ' + this.state.showsidenav}>
+					<a href="#personal-bio">About</a>
+					<a href="#tech-section">Skills</a>
+					<a href="#portfolio-section">Work</a>
+					<a href="#contact-section">Contactos</a>
+				</div>
 				<div className="banner">
 					<div className="banner-container">
 						<header className="header-container">
-							<h1>H</h1>
+							<h1 className="logo-hugo">H</h1>
 							<div className="nav-links">
 								<a href="#personal-bio">About</a>
 								<a href="#tech-section">Skills</a>
 								<a href="#portfolio-section">Work</a>
-								<a href="#personal-bio">Contactos</a>
+								<a href="#contact-section">Contactos</a>
 							</div>
+							<ToggleButtonNav toggleSideNav={this.toggleSideNav} />
 						</header>
-
-						<div className="banner-content">
+						<div className="banner-content" onClick={this.closeSidebar}>
 							<div className="banner-text-container col-md-12 col-lg-6">
 								<h1>
 									Web Developer <br /> &Marketing
