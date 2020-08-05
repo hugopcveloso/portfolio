@@ -8,7 +8,7 @@ class Job extends Component {
 	render() {
 		const jobImages = [ altSolutionsPhoto, hostRoulettePhoto, efeitoContextoPhoto, comportaAppPhoto ];
 
-		const { name, url, id, description, technologies, localimage } = this.props.job;
+		const { name, url, id, description, technologies } = this.props.job;
 		const isEven = id % 2 === 0 ? 'job-container job-even' : 'job-container job-odd';
 		return (
 			<div className={isEven} id={id}>

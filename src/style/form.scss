@@ -1,0 +1,82 @@
+#contact-section {
+}
+
+.form-title {
+	padding-bottom: 20px;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.form-description {
+	font-size: 18px;
+	margin: 20px;
+	margin: 0 auto;
+	width: 70vw;
+}
+
+.services {
+	text-align: left;
+	padding: 20px;
+}
+
+.form {
+	display: block;
+	width: 40vw;
+	margin: 60px auto;
+	.form-labels {
+		font-family: 'Ubuntu';
+		font-weight: bold;
+	}
+	.form-message {
+		width: 100%;
+		font-size: 18px;
+	}
+	.form-email {
+		width: 100%;
+		margin-bottom: 20px;
+		font-size: 18px;
+	}
+	.form-button {
+		border: none;
+		padding: 10px 20px;
+		background-color: #fcf01f;
+		color: black;
+		font-family: 'Ubuntu';
+		font-weight: bold;
+		margin-top: 20px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.form {
+		display: block;
+		width: 80vw;
+		.form-labels {
+		}
+		.form-message {
+			font-size: 16px;
+		}
+		.form-email {
+			font-size: 16px;
+		}
+		.form-button {
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.form {
+		display: block;
+		width: 80vw;
+		.form-labels {
+		}
+		.form-message {
+			font-size: 16px;
+		}
+		.form-email {
+			font-size: 16px;
+		}
+		.form-button {
+		}
+	}
+}
