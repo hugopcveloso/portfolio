@@ -65,6 +65,10 @@
 }
 
 @media (max-width: 600px) {
+	.form-description {
+		width: 80vw;
+		font-size: 16px;
+	}
 	.form {
 		display: block;
 		width: 80vw;
