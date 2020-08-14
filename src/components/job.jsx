@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import altSolutionsPhoto from '../../src/images/altsolutions-screen.jpg';
 import efeitoContextoPhoto from '../../src/images/efeito-contexto-screen.jpg';
 import hostRoulettePhoto from '../../src/images/hostroulette-screen.jpg';
-import comportaAppPhoto from '../../src/images/altsolutions-screen.jpg';
+import comportaAppPhoto from '../../src/images/screen-comportaapp.png';
 
 class Job extends Component {
 	render() {
