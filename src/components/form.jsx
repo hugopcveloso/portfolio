@@ -18,9 +18,10 @@ export default class MyForm extends React.Component {
 						{' '}
 						Estou actualmente aberto a trabalhar em novos projectos, sempre procurei ser versátil no desenvolvimento de
 						projectos, pois acredito que na maioria das vezes não é necessário uma grande equipa para a criação de um
-						site/projecto de qualidade. <br /> A vantagem de trabalhar comigo não é apenas o preço (muito mais barato do
-						que uma consultora), mas é principalmente a comunicação directa e o entendimento transversal de design,
-						desenvolvimento e marketing que resultam num trabalho mais coeso com os objectivos definidos pelo cliente.{' '}
+						site/projecto de qualidade. <br /> A vantagem de trabalhar comigo é principalmente a comunicação directa e o
+						entendimento transversal de design, desenvolvimento e marketing que resultam num trabalho mais coeso com os
+						objectivos definidos pelo cliente. Há também a vantagem de que com uma equipa reduzida, os custos são também
+						reduzidos.
 						<br /> Se precisares de algum serviço contacta-me abaixo, mesmo que o projecto seja de grande dimensão ou
 						necessidades diferentes tenho colegas nas mais diversas áreas com que já fiz parcerias (desde Direito
 						Empresarial, Programação, Animação 3D, etc...).
