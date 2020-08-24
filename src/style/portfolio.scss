@@ -18,6 +18,8 @@
 }
 
 .job-container {
+	transition: transform 0.7s ease-in-out;
+
 	padding-bottom: 60px;
 	display: flex;
 	justify-content: space-around;
@@ -67,6 +69,10 @@
 				font-weight: bold;
 			}
 		}
+	}
+	&:hover {
+		transform: scale(1.02);
+		transition: transform 0.7s ease-in-out;
 	}
 }
 .job-even {

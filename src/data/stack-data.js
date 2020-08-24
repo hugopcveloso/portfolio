@@ -32,7 +32,7 @@ const techList = [
 	{
 		id: 6,
 		name: 'Github',
-		url: 'https://cdn.worldvectorlogo.com/logos/github-1.svg',
+		url: 'https://cdn.worldvectorlogo.com/logos/github-octocat.svg',
 		tags: [ 'Developer' ]
 	},
 	{

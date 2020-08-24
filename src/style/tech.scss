@@ -1,7 +1,8 @@
 #tech-section {
 	background-color: white;
+	color: black;
 	height: auto;
-	min-height: 90vh;
+	min-height: 85vh;
 	margin-bottom: 40px;
 	text-align: center;
 	h2 {
@@ -11,16 +12,17 @@
 
 .skills-navbar {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
+	gap: calc(15px + (200 - 15) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .tech-logo-image {
 	height: 50px;
 }
 .stack-list {
-	width: 70%;
+	width: 80%;
 	margin: 0 auto;
-	margin-top: 60px;
+	margin-top: 100px;
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
 	grid-gap: 40px;
@@ -73,6 +75,10 @@
 .btn-stack {
 	cursor: pointer;
 	margin: 10px;
+	&:hover {
+		transition: all 1s;
+		background-color: yellow;
+	}
 }
 .active-button {
 	margin: 0px;

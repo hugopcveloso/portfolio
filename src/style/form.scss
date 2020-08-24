@@ -1,8 +1,16 @@
 #contact-section {
+	background-color: white;
+	color: black;
+}
+
+#services-section {
+	background-color: black;
+	color: white;
+	padding: 40px 0px 40px 0px;
 }
 
 .form-title {
-	padding-bottom: 20px;
+	padding-bottom: 60px;
 	padding-top: 20px;
 	text-align: center;
 }
@@ -36,9 +44,10 @@ textarea {
 	display: block;
 	width: 70vw;
 	margin: 60px auto;
-	background: rgba(240, 240, 240, 0.61);
+
 	padding: 30px;
 	border-radius: 10px;
+	color: black;
 	.form-labels {
 		font-family: 'Ubuntu';
 		font-weight: bold;

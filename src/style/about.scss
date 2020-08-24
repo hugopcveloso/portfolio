@@ -1,19 +1,22 @@
 #personal-bio {
-	background-color: #dadada;
+	background-color: white;
+	color: black;
+}
+
+.about-wrapper {
 	display: flex;
 	justify-content: space-around;
 	align-content: center;
 	flex-wrap: wrap;
-	margin-bottom: 40px;
+	width: 85vw;
+	margin: 0 auto;
+	padding-top: calc(15px + (50 - 15) * ((100vw - 300px) / (1600 - 300)));
 }
-
 .blob-container {
-	padding: 0px;
 	text-align: center;
-	margin-top: 40px;
-	margin-bottom: -40px;
+	margin-top: -(calc(15px + (30- 15) * ((100vw - 300px) / (1600 - 300))));
 	.blob-svg {
-		width: 60% !important;
+		width: 80% !important;
 		height: calc(100% + 20px);
 	}
 
@@ -23,7 +26,6 @@
 }
 .about-container {
 	text-align: center;
-	padding: calc(15px + (70 - 15) * ((100vw - 300px) / (1600 - 300)));
 	margin-top: 60px;
 	.about-title {
 		z-index: 10;
@@ -81,11 +83,17 @@
 @media (max-width: 600px) {
 	.section-container {
 	}
+
+	.about-wrapper {
+		padding: 0px;
+		width: 100%;
+	}
 	#personal-bio {
 		width: 100%;
 	}
 
 	.blob-container {
+		margin-top: 60px;
 		.blob-svg {
 			width: 20%;
 		}

@@ -7,7 +7,7 @@ const workData = [
 		description:
 			'Desenvolvi o website da AltSolutions em Ruby on Rails, pois vão ser desenvolvidos mais features no futuro\
 			É importante notar que as decisões relativamente ao design foram tomadas lado-a-lado com o cliente\
-			Também fiz serviços de scraping de bases de dados e informações que seriam do interesse da Alt Solutions.',
+			Também fiz serviços de scraping de bases de dados e de informações que seriam do interesse da Alt Solutions.',
 		description_eng:
 			"I developed the website for Alt Solutions in Ruby on Rails, it's \
 		 important to note that both the design and UX were \
