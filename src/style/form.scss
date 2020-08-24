@@ -9,12 +9,6 @@
 	padding: 40px 0px 40px 0px;
 }
 
-.form-title {
-	padding-bottom: 60px;
-	padding-top: 20px;
-	text-align: center;
-}
-
 .services-title {
 	padding-bottom: 20px;
 	padding-top: 20px;
@@ -33,6 +27,29 @@
 	padding: 20px;
 }
 
+.contacts-container {
+	display: flex;
+	justify-content: space-around;
+	width: 90%;
+	margin: 0 auto;
+	align-items: center;
+}
+
+.social-container {
+	width: 100%;
+	text-align: center;
+}
+
+.form-container {
+	width: 100%;
+}
+
+.form-title {
+	padding-bottom: 60px;
+	padding-top: 20px;
+	text-align: center;
+}
+
 input {
 	border-radius: 5px;
 }
@@ -42,9 +59,8 @@ textarea {
 
 .form {
 	display: block;
-	width: 70vw;
+	width: 100%;
 	margin: 60px auto;
-
 	padding: 30px;
 	border-radius: 10px;
 	color: black;
@@ -81,6 +97,9 @@ textarea {
 }
 
 @media (max-width: 1000px) {
+	.contacts-container {
+		flex-wrap: wrap;
+	}
 	.form {
 		display: block;
 		width: 80vw;
@@ -106,7 +125,9 @@ textarea {
 	.form {
 		display: block;
 		width: 80vw;
+		padding: 5px;
 		.form-labels {
+			font-size: 16px;
 		}
 		.form-message {
 			font-size: 16px;

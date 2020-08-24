@@ -5,9 +5,9 @@ const workData = [
 		url: 'http://www.altsolutions.net/',
 		localimage: 'altsolutions-screen.jpg',
 		description:
-			'Desenvolvi o website da AltSolutions em Ruby on Rails, pois vão ser desenvolvidos mais features no futuro\
-			É importante notar que as decisões relativamente ao design foram tomadas lado-a-lado com o cliente\
-			Também fiz serviços de scraping de bases de dados e de informações que seriam do interesse da Alt Solutions.',
+			'Desenvolvi o website da AltSolutions em Ruby on Rails, pois vão ser desenvolvidos mais features no futuro.\
+			Também fiz alguns serviços de scraping de informações em páginas dinâmicas que seriam do interesse da Alt Solutions.\
+			É importante notar que as decisões relativamente ao Design foram tomadas lado-a-lado com o cliente.',
 		description_eng:
 			"I developed the website for Alt Solutions in Ruby on Rails, it's \
 		 important to note that both the design and UX were \
@@ -21,10 +21,10 @@ const workData = [
 		url: 'http://www.host-roulette.com/',
 		localimage: 'hostroulette-screen.jpg',
 		description:
-			'A aplicação Host-Roulette foi desenvolvida em 2 semanas por uma equipa de 4 pessoas como parte do projecto final do Le Wagon Coding Bootcamp\
+			'A aplicação Host-Roulette foi desenvolvida em 2 semanas por uma equipa de 4 pessoas como parte do projecto final do Le Wagon Coding Bootcamp.\
 			Host-Roulette é um site para facilitar eventos entre amigos, ao escolher um anfitrião entre membros do grupos. \
-			O anfitrião escolhido tem depois acesso a ferramentas para criar o melhor evento possível como fazer perguntas aos seus amigos, ver estatísticas e publicar o evento\
-			Neste projecto escolhi ficar principalmente no back-end e desenvolvimento de features como estatísticas, notificações, gráficos, etc...',
+			O anfitrião escolhido tem depois acesso a ferramentas para criar o melhor evento possível como fazer perguntas aos seus amigos, ver estatísticas e publicar os detalhes do evento.\
+			Neste projecto escolhi ficar principalmente no back-end e no desenvolvimento de features como estatísticas, notificações, gráficos, etc...',
 		description_eng:
 			'Developed Host-Roulette in 2 weeks with a team of 3 other people, as\
 		the final project in Le Wagon Coding Bootcamp. Host-Roulette is a\
@@ -56,8 +56,8 @@ const workData = [
 		url: 'https://www.comportaapp.com/',
 		localimage: 'screen-comportaapp.png',
 		description:
-			'Comporta App é um PWA, um site para ser utilizado em mobile, que é parte de um programa Europeu para desenvolver a região\
-			 Houve uma agência que trabalhou no projecto antes de mim que utilizou a plataforma GoodBarber o que dificultou a integração de novos features\
+			'Comporta App é um PWA, um site para ser utilizado em mobile, parte de um programa Europeu para desenvolver a região.\
+			 A agência que trabalhou no projecto antes de mim utilizou a plataforma GoodBarber o que dificultou a integração de novos features\
 			 As minhas responsabilidades foram principalmente desenvolver novas soluções apesar das limitações da plataforma \
 			 Por exemplo para criar um sistema de reserva de actividades, criei um sistema de pagamentos fora do Goodbarber e automatizei emails entre clientes e fornecedores\
 			 de forma a passar no email da empresa, desta forma tornava-se possível acompanhar as reservas',

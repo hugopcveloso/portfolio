@@ -12,22 +12,34 @@ export default class MyForm extends React.Component {
 	render() {
 		const { status } = this.state;
 		return (
-			<div className="form-container">
-				<div className="form-wrapper">
-					<form className="form" onSubmit={this.submitForm} action="https://formspree.io/xyynoozj" method="POST">
-						<h4 className="form-title">Contacto</h4>
+			<div className="contacts-container">
+				<div className="form-container">
+					<div className="form-wrapper">
+						<form className="form" onSubmit={this.submitForm} action="https://formspree.io/xyynoozj" method="POST">
+							<h4 className="form-title">Contacto</h4>
 
-						<label className="form-labels">Email:</label>
-						<br />
-						<input className="form-email" type="email" name="email" />
-						<br />
-						<label className="form-labels">Mensagem:</label>
-						<br />
-						<textarea className="form-message" type="text" name="message" rows="5" />
-						<br />
-						{status === 'SUCCESS' ? <p>Obrigado!</p> : <button className="form-button">Enviar</button>}
-						{status === 'ERROR' && <p>Houve um erro na submissão, tenta dar refresh na página e tentar outra vez</p>}
-					</form>
+							<label className="form-labels">Email:</label>
+							<br />
+							<input className="form-email" type="email" name="email" />
+							<br />
+							<label className="form-labels">Mensagem:</label>
+							<br />
+							<textarea className="form-message" type="text" name="message" rows="5" />
+							<br />
+							{status === 'SUCCESS' ? <p>Obrigado!</p> : <button className="form-button">Enviar</button>}
+							{status === 'ERROR' && <p>Houve um erro na submissão, tenta dar refresh na página e tentar outra vez</p>}
+						</form>
+					</div>
+				</div>
+				<div className="social-container">
+					<h5>Follow me on</h5>
+					<a href="" className="social-linkedin">
+						Linkedin
+					</a>{' '}
+					<br />
+					<a href="" className="social-github">
+						Github
+					</a>
 				</div>
 			</div>
 		);
