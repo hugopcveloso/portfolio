@@ -181,8 +181,8 @@ class App extends Component {
 
 				<div className="section-container" id="services-section">
 					<h2 className="form-title"> Serviços </h2>
-					<div className="form-description">
-						<p className=" form-description">
+					<div className="services-description">
+						<p>
 							{' '}
 							Estou actualmente aberto a trabalhar em novos projectos, sempre procurei ser versátil no desenvolvimento
 							de projectos, pois acredito que na maioria das vezes não é necessário uma grande equipa para a criação de

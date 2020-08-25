@@ -1,5 +1,10 @@
 import React from 'react';
+import techList from '../data/stack-data';
+import { library } from '@fortawesome/fontawesome-svg-core';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+library.add(fab);
 export default class MyForm extends React.Component {
 	constructor(props) {
 		super(props);
@@ -32,12 +37,15 @@ export default class MyForm extends React.Component {
 					</div>
 				</div>
 				<div className="social-container">
-					<h5>Follow me on</h5>
-					<a href="" className="social-linkedin">
+					<h4 className="form-title">Redes Sociais</h4>
+					<a href="https://www.linkedin.com/in/hugo-veloso" className="social-link" id="linkedin-link" target="_blank">
+						<FontAwesomeIcon className="social-icons" id="linkedin-icon" icon={[ 'fab', 'linkedin' ]} size="lg" />
 						Linkedin
 					</a>{' '}
 					<br />
-					<a href="" className="social-github">
+					<br />
+					<a href="https://github.com/hugopcveloso" className="social-link" id="github-link" target="_blank">
+						<FontAwesomeIcon className="social-icons" id="github-icon" icon={[ 'fab', 'github' ]} size="lg" />
 						Github
 					</a>
 				</div>
