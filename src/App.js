@@ -5,6 +5,7 @@ import Button from './components/button';
 import WorkList from './components/work-list';
 import MyForm from './components/form';
 import ToggleButtonNav from './components/sidebar-button';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 class App extends Component {
 	state = { filterStack: [], showsidenav: 'hidden' };
@@ -31,10 +32,58 @@ class App extends Component {
 		return (
 			<div className="App">
 				<div onClick={this.closeSidebar} className={'sidebar-open' + ' ' + this.state.showsidenav}>
-					<a href="#personal-bio">About</a>
-					<a href="#tech-section">Skills</a>
-					<a href="#portfolio-section">Work</a>
-					<a href="#contact-section">Contactos</a>
+					<Link
+						activeClass="active"
+						className="sidebar-link"
+						to="personal-bio"
+						spy={true}
+						smooth={true}
+						offset={0}
+						duration={500}
+						onClick={this.closeSidebar}
+					>
+						{' '}
+						Acerca
+					</Link>
+					<Link
+						activeClass="active"
+						className="sidebar-link"
+						to="portfolio-section"
+						spy={true}
+						smooth={true}
+						offset={0}
+						duration={500}
+						onClick={this.closeSidebar}
+					>
+						{' '}
+						Work
+					</Link>
+					<Link
+						activeClass="active"
+						className="sidebar-link"
+						to="tech-section"
+						spy={true}
+						smooth={true}
+						offset={0}
+						duration={800}
+						onClick={this.closeSidebar}
+					>
+						{' '}
+						Tech
+					</Link>
+					<Link
+						activeClass="active"
+						className="sidebar-link"
+						to="contact-section"
+						spy={true}
+						smooth={true}
+						offset={0}
+						duration={900}
+						onClick={this.closeSidebar}
+					>
+						{' '}
+						Contactos
+					</Link>
 				</div>
 				<div className="banner">
 					<div className="banner-container">
@@ -42,10 +91,22 @@ class App extends Component {
 							<header className="header-container">
 								<h1 className="logo-hugo">H</h1>
 								<div className="nav-links">
-									<a href="#personal-bio">About</a>
-									<a href="#tech-section">Skills</a>
-									<a href="#portfolio-section">Work</a>
-									<a href="#contact-section">Contactos</a>
+									<Link activeClass="active" to="personal-bio" spy={true} smooth={true} offset={0} duration={500}>
+										{' '}
+										Acerca
+									</Link>
+									<Link activeClass="active" to="portfolio-section" spy={true} smooth={true} offset={0} duration={500}>
+										{' '}
+										Work
+									</Link>
+									<Link activeClass="active" to="tech-section" spy={true} smooth={true} offset={0} duration={800}>
+										{' '}
+										Tech
+									</Link>
+									<Link activeClass="active" to="contact-section" spy={true} smooth={true} offset={0} duration={900}>
+										{' '}
+										Contactos
+									</Link>
 								</div>
 								<ToggleButtonNav toggleSideNav={this.toggleSideNav} />
 							</header>
@@ -94,7 +155,7 @@ class App extends Component {
 					</div>
 				</div>
 
-				<div className="section-container " id="personal-bio">
+				<div className="section-container " id="personal-bio" onClick={this.closeSidebar}>
 					<div className="about-wrapper">
 						<div className="blob-container col-sm-12 col-lg-6">
 							<svg
@@ -161,7 +222,7 @@ class App extends Component {
 						</div>
 					</div>
 				</div>
-				<div className="section-container" id="portfolio-section">
+				<div className="section-container" id="portfolio-section" onClick={this.closeSidebar}>
 					<h2 className="portfolio-title"> My Work </h2>
 					<div id="work-list-container">
 						<WorkList />

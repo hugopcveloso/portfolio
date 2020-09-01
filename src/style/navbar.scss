@@ -16,12 +16,13 @@
 	flex-direction: column;
 	height: 100vh;
 	z-index: 20;
-	a {
+	.sidebar-link {
 		font-size: 30px;
 		color: white;
 		padding-left: 30px;
 		padding: 20px 20px 20px 20px;
 		&:hover {
+			cursor: pointer;
 			font-weight: bold;
 			text-decoration: none;
 			background-color: yellow;
@@ -35,6 +36,7 @@
 	visibility: visible;
 	opacity: 1;
 }
+
 .hidden {
 	transition: visibility 0.5s, opacity 0.5s linear;
 	visibility: hidden !important;
