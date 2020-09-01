@@ -91,19 +91,51 @@ class App extends Component {
 							<header className="header-container">
 								<h1 className="logo-hugo">H</h1>
 								<div className="nav-links">
-									<Link activeClass="active" to="personal-bio" spy={true} smooth={true} offset={0} duration={500}>
+									<Link
+										activeClass="active"
+										className="navbar-link"
+										to="personal-bio"
+										spy={true}
+										smooth={true}
+										offset={0}
+										duration={500}
+									>
 										{' '}
 										Acerca
 									</Link>
-									<Link activeClass="active" to="portfolio-section" spy={true} smooth={true} offset={0} duration={500}>
+									<Link
+										activeClass="active"
+										className="navbar-link"
+										to="portfolio-section"
+										spy={true}
+										smooth={true}
+										offset={0}
+										duration={500}
+									>
 										{' '}
 										Work
 									</Link>
-									<Link activeClass="active" to="tech-section" spy={true} smooth={true} offset={0} duration={800}>
+									<Link
+										activeClass="active"
+										className="navbar-link"
+										to="tech-section"
+										spy={true}
+										smooth={true}
+										offset={0}
+										duration={800}
+									>
 										{' '}
 										Tech
 									</Link>
-									<Link activeClass="active" to="contact-section" spy={true} smooth={true} offset={0} duration={900}>
+									<Link
+										activeClass="active"
+										className="navbar-link"
+										to="contact-section"
+										spy={true}
+										smooth={true}
+										offset={0}
+										duration={900}
+									>
 										{' '}
 										Contactos
 									</Link>

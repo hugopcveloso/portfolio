@@ -5,6 +5,23 @@
 	cursor: pointer;
 }
 
+.navbar-link {
+	&:after {
+		content: ""; /* This is necessary for the pseudo element to work. */
+		display: block; /* This will put the pseudo element on its own line. */
+		width: 0%; /* Change this to whatever width you want to have before hover. */
+		padding-top: 0px; /* This creates some space between the element and the border. */
+		border-bottom: 1px solid yellow; /* This creates the border. Replace black with whatever color you want. */
+		transition: .5s; /* This establishes the amount of time in seconds the animation should take from start to finish */
+	}
+	&:hover {
+		cursor: pointer;
+		&:after {
+			width: 100%; /* This will be the new width of your border when on hover */
+		}
+	}
+}
+
 .sidebar-open {
 	position: absolute;
 	background-color: black;
@@ -17,12 +34,13 @@
 	height: 100vh;
 	z-index: 20;
 	.sidebar-link {
+		cursor: pointer;
+
 		font-size: 30px;
 		color: white;
 		padding-left: 30px;
 		padding: 20px 20px 20px 20px;
 		&:hover {
-			cursor: pointer;
 			font-weight: bold;
 			text-decoration: none;
 			background-color: yellow;
