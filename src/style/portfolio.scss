@@ -2,7 +2,7 @@
 	background-color: black;
 	height: auto;
 	text-align: center;
-	flex-wrap: wrap;
+
 	margin-top: 120px;
 	margin-bottom: 40px;
 	color: white;
@@ -13,38 +13,55 @@
 	padding-bottom: 40px;
 }
 
+.display-none {
+	display: none;
+	opacity: 0;
+	transition: visibility 0s, opacity 90, 5s linear;
+}
+.display-show {
+	display: block;
+	visibility: visible;
+	opacity: 1;
+}
+
 .work-list {
 	padding-bottom: 40px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	row-gap: 50px;
 }
 
 .job-container {
 	transition: transform 0.7s ease-in-out;
-
 	padding-bottom: 60px;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	// min-width: 900px;
+	padding: 30px;
 	flex-wrap: wrap;
-	margin: calc(30px + (80 - 30) * ((100vw - 300px) / (1600 - 300)));
+	position: relative;
+	.job-header {
+		display: flex;
+		justify-content: space-between;
+		cursor: pointer;
+		&:hover {
+			color: yellow;
+		}
+	}
 	.job-image {
+		margin: 0 auto;
 		display: block;
 		max-width: 40%;
-		max-height: 40%;
 		min-width: 500px;
-		width: auto;
-		height: auto;
 	}
 	.job-content-container {
 		min-width: 500px;
-		width: 50vw;
+		width: 40%;
+		margin: 0 auto;
 		height: 100%;
 		text-align: left;
-		font-size: 18px;
+		font-size: 16px;
 		.job-name {
 			font-size: 30px;
 			text-decoration: none;
-			font-family: 'Ubuntu';
+			font-family: "Ubuntu";
 			color: white;
 			font-weight: bold;
 			margin-bottom: 20px;
@@ -70,18 +87,19 @@
 			}
 		}
 	}
-	&:hover {
-		transform: scale(1.02);
-		transition: transform 0.7s ease-in-out;
-	}
 }
-.job-even {
-	flex-direction: row-reverse;
-	.job-content-container {
-	}
+
+.arrow-collapse {
+	font-size: 30px;
+	text-align: center;
+	padding-top: 2px;
 }
 
 @media (max-width: 600px) {
+	.work-list {
+		grid-template-columns: 1fr;
+	}
+
 	.job-container {
 		padding-bottom: 40px;
 	}
@@ -90,6 +108,11 @@
 		margin-bottom: 30px;
 		min-width: 100% !important;
 		margin-top: 30px;
+		.job-name {
+			a {
+				font-size: 20px;
+			}
+		}
 		.site-button {
 		}
 		p {
@@ -99,5 +122,10 @@
 	.job-image {
 		min-width: 100% !important;
 		width: 100% !important;
+	}
+}
+@media (max-width: 900px) {
+	.work-list {
+		grid-template-columns: 1fr;
 	}
 }

@@ -18,11 +18,10 @@ export default class MyForm extends React.Component {
 		const { status } = this.state;
 		return (
 			<div className="contacts-container">
+				<h2 className="form-title"> Contactos </h2>
 				<div className="form-container">
 					<div className="form-wrapper">
 						<form className="form" onSubmit={this.submitForm} action="https://formspree.io/xyynoozj" method="POST">
-							<h4 className="form-title">Contacto</h4>
-
 							<label className="form-labels">Email:</label>
 							<br />
 							<input className="form-email" type="email" name="email" />
@@ -37,7 +36,6 @@ export default class MyForm extends React.Component {
 					</div>
 				</div>
 				<div className="social-container">
-					<h4 className="form-title">Redes Sociais</h4>
 					<a href="https://www.linkedin.com/in/hugo-veloso" className="social-link" id="linkedin-link" target="_blank">
 						<FontAwesomeIcon className="social-icons" id="linkedin-icon" icon={[ 'fab', 'linkedin' ]} size="lg" />
 						Linkedin

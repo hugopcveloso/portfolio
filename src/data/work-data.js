@@ -58,9 +58,7 @@ const workData = [
 		description:
 			'Comporta App é um PWA, um site para ser utilizado em mobile, parte de um programa Europeu para desenvolver a região.\
 			 A agência que trabalhou no projecto antes de mim utilizou a plataforma GoodBarber o que dificultou a integração de novos features\
-			 As minhas responsabilidades foram principalmente desenvolver novas soluções apesar das limitações da plataforma \
-			 Por exemplo para criar um sistema de reserva de actividades, criei um sistema de pagamentos fora do Goodbarber e automatizei emails entre clientes e fornecedores\
-			 de forma a passar no email da empresa, desta forma tornava-se possível acompanhar as reservas',
+			 As minhas responsabilidades foram principalmente desenvolver novas soluções de monetização apesar das limitações da plataforma' ,
 		description_eng:
 			'Comporta App is a PWA that was part of an European programme to develop the region.\
 			There was an agency working on the project before me that setup the project in CMS called Goodbarber.\

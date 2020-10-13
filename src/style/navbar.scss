@@ -5,6 +5,29 @@
 	cursor: pointer;
 }
 
+.navbar-container {
+	background-color: black;
+	color: white;
+}
+
+.header-container {
+	display: flex;
+	padding: 10px 0px;
+	justify-content: space-between;
+	align-items: center;
+
+	.nav-links {
+		display: flex;
+		font-family: "VT323";
+		font-size: 30px;
+		a {
+			padding: 20px;
+			text-decoration: none;
+			color: white;
+		}
+	}
+}
+
 .navbar-link {
 	&:after {
 		content: ""; /* This is necessary for the pseudo element to work. */
@@ -12,7 +35,7 @@
 		width: 0%; /* Change this to whatever width you want to have before hover. */
 		padding-top: 0px; /* This creates some space between the element and the border. */
 		border-bottom: 1px solid yellow; /* This creates the border. Replace black with whatever color you want. */
-		transition: .5s; /* This establishes the amount of time in seconds the animation should take from start to finish */
+		transition: 0.5s; /* This establishes the amount of time in seconds the animation should take from start to finish */
 	}
 	&:hover {
 		cursor: pointer;

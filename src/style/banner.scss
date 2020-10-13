@@ -13,24 +13,6 @@
 	margin: 0 auto;
 }
 
-.header-container {
-	display: flex;
-	padding: 50px 0px;
-	justify-content: space-between;
-	align-items: center;
-
-	.nav-links {
-		display: flex;
-		font-family: 'VT323';
-		font-size: 30px;
-		a {
-			padding: 20px;
-			text-decoration: none;
-			color: white;
-		}
-	}
-}
-
 .banner-content {
 	margin-top: 60px;
 	display: flex;
@@ -59,7 +41,7 @@
 			margin-top: -400px;
 		}
 		.gradient-square {
-			margin-left: 50px;
+			margin-left: 60px;
 		}
 	}
 }

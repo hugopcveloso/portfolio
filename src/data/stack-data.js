@@ -88,24 +88,6 @@ const techList = [
 		name: 'Photoshop',
 		url: 'https://cdn.worldvectorlogo.com/logos/photoshop-cc.svg',
 		tags: [ 'Designer' ]
-	},
-	{
-		id: 16,
-		name: 'Google Analytics',
-		url: 'https://cdn.worldvectorlogo.com/logos/google-analytics-3.svg',
-		tags: [ 'Marketing' ]
-	},
-	{
-		id: 17,
-		name: 'Facebook Ads',
-		url: 'https://cdn.worldvectorlogo.com/logos/facebook-3.svg',
-		tags: [ 'Marketing' ]
-	},
-	{
-		id: 18,
-		name: 'Instagram Ads',
-		url: 'https://cdn.worldvectorlogo.com/logos/instagram-2-1.svg',
-		tags: [ 'Marketing' ]
 	}
 ];
 

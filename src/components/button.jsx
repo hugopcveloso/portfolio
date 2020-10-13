@@ -1,27 +1,44 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 
-class Button extends Component {
-	state = { clicked: false };
 
-	render() {
-		const { stack, handleClick } = this.props;
-		const highlight = () => {
-			this.setState({
-				clicked: !this.state.clicked
-			});
+const Button = (props) => {
+	const [clicked, setClicked] = useState(false)
+
+		const highlight =  () => {
+			setClicked(!clicked)
 		};
 		return (
 			<h5
-				className={this.state.clicked ? 'active-button btn-stack' : 'btn-stack'}
-				onClick={() => {
-					handleClick(stack);
-					highlight();
-				}}
+				className={clicked? 'active-button btn-stack' : 'btn-stack'}
+				// onClick={highlight}
 			>
-				{stack}
+				{props.stack}
 			</h5>
 		);
-	}
 }
+
+// class Button extends Component {
+// 	state = { clicked: false };
+
+// 	render() {
+// 		const { stack, handleClick } = this.props;
+// 		const highlight = () => {
+// 			this.setState({
+// 				clicked: !this.state.clicked
+// 			});
+// 		};
+// 		return (
+// 			<h5
+// 				className={this.state.clicked ? 'active-button btn-stack' : 'btn-stack'}
+// 				onClick={() => {
+// 					handleClick(stack);
+// 					highlight();
+// 				}}
+// 			>
+// 				{stack}
+// 			</h5>
+// 		);
+// 	}
+// }
 
 export default Button;
