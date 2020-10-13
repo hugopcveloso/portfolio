@@ -17,8 +17,10 @@ export default class MyForm extends React.Component {
 	render() {
 		const { status } = this.state;
 		return (
+			<React.Fragment>
+			<h2 className="form-title"> Contactos </h2>
 			<div className="contacts-container">
-				<h2 className="form-title"> Contactos </h2>
+				
 				<div className="form-container">
 					<div className="form-wrapper">
 						<form className="form" onSubmit={this.submitForm} action="https://formspree.io/xyynoozj" method="POST">
@@ -48,6 +50,7 @@ export default class MyForm extends React.Component {
 					</a>
 				</div>
 			</div>
+			</React.Fragment>
 		);
 	}
 
