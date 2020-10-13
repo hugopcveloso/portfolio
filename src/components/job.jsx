@@ -25,9 +25,11 @@ const Job = (props) => {
 						</h3>
 						<FontAwesomeIcon icon={collapsed ? faCaretDown : faCaretUp} className="arrow-collapse" onClick={handleCollapse} />
 					</div>
+					<p className="job-technologies"> {technologies} </p>
+
 					<div className={`job-collapsed ${collapsed ? 'display-none' : 'display-show'}`}>
 						<p className="job-description">{description}</p>
-						<p className="job-technologies"> {technologies} </p>
+						
 						<a href={url} target="_blank" className=" site-button">
 							{' '}
 							Visitar{' '}

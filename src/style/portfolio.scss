@@ -40,6 +40,8 @@
 	.job-header {
 		display: flex;
 		justify-content: space-between;
+		padding: -4px;
+
 		cursor: pointer;
 		&:hover {
 			color: yellow;
@@ -48,12 +50,9 @@
 	.job-image {
 		margin: 0 auto;
 		display: block;
-		max-width: 40%;
-		min-width: 500px;
+		width: 100%;
 	}
 	.job-content-container {
-		min-width: 500px;
-		width: 40%;
 		margin: 0 auto;
 		height: 100%;
 		text-align: left;
