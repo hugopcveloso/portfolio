@@ -49,7 +49,7 @@ const Navbar = () => {
 						</Link>
 						<Link
 							activeClass="active"
-							className="navbar-link "
+							className="navbar-link"
 							to="tech-section"
 							spy={true}
 							smooth={true}
