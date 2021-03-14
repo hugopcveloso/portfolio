@@ -12,6 +12,7 @@
 		"@testing-library/jest-dom": "^5.11.9",
 		"@testing-library/react": "^11.2.5",
 		"@testing-library/user-event": "^12.6.3",
+		"babel-loader": "^8.2.2",
 		"bootstrap": "^4.5.2",
 		"gh-pages": "^3.1.0",
 		"immer": "8.0.1",
@@ -33,6 +34,10 @@
 		"eject": "react-scripts eject",
 		"predeploy": "yarn run build",
 		"deploy": "gh-pages -d build"
+	},
+	"engines": {
+		"npm": "please-use-yarn",
+		"yarn": ">= 1.22.5"
 	},
 	"eslintConfig": {
 		"extends": "react-app"
