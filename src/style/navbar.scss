@@ -51,7 +51,7 @@
 	padding-top: 50px;
 	position: fixed;
 	right: 0;
-	width: 60vw;
+
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
@@ -73,15 +73,17 @@
 		}
 	}
 }
+
 .show {
 	visibility: visible;
 	opacity: 1;
+	width: 60vw;
+	transition: width 0.5s ease-in-out;
 }
 
 .hidden {
-	transition: visibility 0.5s, opacity 0.5s linear;
-	visibility: hidden !important;
-	opacity: 0;
+	width: 0px;
+	transition: width 0.5s ease-in-out;
 }
 
 @media (max-width: 600px) {

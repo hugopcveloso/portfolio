@@ -43,13 +43,13 @@ function Banner() {
 											y2="494"
 											gradientUnits="userSpaceOnUse"
 										>
-											<stop stop-color="#918E8E" />
+											<stop stopColor="#918E8E" />
 											<stop
 												offset="0.476389"
-												stop-color="#BBBBBB"
-												stop-opacity="0.57"
+												stopColor="#BBBBBB"
+												stopOpacity="0.57"
 											/>
-											<stop offset="1" stop-color="white" stop-opacity="0" />
+											<stop offset="1" stopColor="white" stopOpacity="0" />
 										</linearGradient>
 									</defs>
 								</svg>

@@ -4,21 +4,13 @@ import SidebarButton from "../components/SidebarButton";
 import Sidebar from "../components/Sidebar";
 
 const Navbar = () => {
-	const [showsidenav, setShowSideNav] = useState("hidden");
-	useEffect(() => {
-		setShowSideNav("hidden");
-	}, []);
-	const toggleSideNav = () => {
-		showsidenav === "hidden"
-			? setShowSideNav("show")
-			: setShowSideNav("hidden");
-	};
-	const closeSidebar = () => {
-		setShowSideNav("hidden");
-	};
+	const [showsidenav, setShowSideNav] = useState(false);
+	const toggleSideNav = () => setShowSideNav(!showsidenav);
+	const showSideNav = showsidenav ? "show" : "hidden";
+
 	return (
 		<div className="navbar-container">
-			<Sidebar closeSidebar={closeSidebar} showSideNav={showsidenav} />
+			<Sidebar closeSidebar={toggleSideNav} showSideNav={showSideNav} />
 			<div className="banner-wrapper">
 				<header className="header-container">
 					<h1 className="logo-hugo">H</h1>
