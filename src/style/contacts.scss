@@ -5,60 +5,67 @@
 }
 
 .social-container {
-	width: 100%;
-	margin-top: 0px;
-	padding: 30px;
+	margin-left: -10px;
+	margin-bottom: 10px;
 
-	text-align: center;
-}
-
-.social-link {
-	color: black;
-	font-size: 25px;
-	padding: 10px 20px 10px 20px;
-	transition: color 0.4 ease-in-out;
-	transition: background-color 0.4s ease-in-out;
-	&:hover {
-		color: white;
-		text-decoration: none;
-		background-color: black;
-		transition: color 0.5s ease-in-out;
-		transition: background-color 0.8s ease-in-out;
+	.social-links {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
-}
-#github-link {
-	padding: 10px 32px 10px 18px;
-}
-
-.social-icons {
-	margin-right: 10px;
-}
-
-#github-icon {
-	margin-right: 15px;
+	.form-title {
+		text-align: center;
+		padding-bottom: 50px;
+	}
+	#github-link {
+		margin-left: -2px;
+	}
+	a {
+		text-decoration: none;
+		color: black;
+		.social-icons {
+			margin-right: 15px;
+			color: black;
+			font-size: 30px;
+		}
+		&:after {
+			content: ""; /* This is necessary for the pseudo element to work. */
+			display: block; /* This will put the pseudo element on its own line. */
+			width: 0%; /* Change this to whatever width you want to have before hover. */
+			padding-top: 0px; /* This creates some space between the element and the border. */
+			border-bottom: 2px solid black; /* This creates the border. Replace black with whatever color you want. */
+			transition: 0.5s; /* This establishes the amount of time in seconds the animation should take from start to finish */
+		}
+		&:hover {
+			cursor: pointer;
+			&:after {
+				width: 100px; /* This will be the new width of your border when on hover */
+			}
+		}
+	}
 }
 
 .contacts-container {
 	display: flex;
 	justify-content: space-around;
-	width: 75%;
-	margin: 0 auto;
+	width: 80vw;
+	margin: 150px auto;
 }
 
 .form-container {
-	width: 100%;
+	width: 50vw;
 	margin-left: -25px;
 }
 
 .form-title {
-	padding-bottom: 60px;
-	padding-top: 40px;
-	text-align: center;
+	text-align: left;
+	margin-bottom: 30px;
 }
 
 .form {
 	display: block;
-	width: 100%;
+	width: 85%;
 
 	border-radius: 10px;
 	color: black;
@@ -95,21 +102,25 @@
 }
 
 @media (max-width: 1000px) {
+	.form-title {
+		text-align: center;
+		width: 100%;
+	}
+	.social-container {
+		margin-top: 40px;
+		padding-left: 0px;
+		.form-title {
+			margin-left: -10px;
+		}
+	}
+
 	#social-title {
 		display: none;
 	}
-	.social-container {
-		margin-top: 20px;
-		padding-top: 20px;
-		display: flex;
-		justify-content: space-around;
-		.social-link {
-			height: 60px;
-		}
-	}
 	.contacts-container {
-		flex-wrap: wrap;
+		flex-direction: column;
 	}
+
 	.form {
 		display: block;
 		width: 80vw;
@@ -128,15 +139,6 @@
 }
 
 @media (max-width: 600px) {
-	.social-container {
-		margin-top: 20px;
-		flex-direction: column;
-		justify-content: space-around;
-		.social-link {
-			padding: 10px 18px 10px 18px;
-		}
-	}
-
 	.form {
 		display: block;
 		width: 80vw;
@@ -153,8 +155,5 @@
 		}
 		.form-button {
 		}
-	}
-	.social-container {
-		margin: 0px;
 	}
 }

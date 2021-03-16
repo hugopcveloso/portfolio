@@ -1,6 +1,6 @@
 import React from "react";
 import Sidebar from "../components/Sidebar";
-import BannerPhoto from "../images/linkedinpic-min.jpg";
+import BannerPhoto from "../images/hugo-newphoto.jpg";
 import Navbar from "./Navbar";
 
 function Banner() {
@@ -16,9 +16,8 @@ function Banner() {
 									Web Developer <br /> &Designer
 								</h1>
 								<p>
-									Olá, o meu nome é Hugo Veloso e trabalho com Desenvolvimento
-									de Websites, Design e Marketing Digital para pequenas
-									empresas.
+									Hey, my name is Hugo Veloso, I'm a Full-Stack Javascript
+									Developer and this is my Portfolio.
 								</p>
 								<a href="#portfolio-section" className="cta-banner">
 									Portfolio

@@ -1,6 +1,11 @@
-import React from "react";
-import myPhoto from "../images/hugo_cut.png";
+import React, { useState } from "react";
+import myPhoto from "../images/hugo-glasses-color.jpg";
+import aboutData from "../data/about-data";
+import AboutHobbies from "../components/AboutHobbies";
+
 const About = () => {
+	const [expanded, setExpanded] = useState(false);
+
 	return (
 		<div>
 			<div className="section-container " id="personal-bio">
@@ -69,6 +74,83 @@ const About = () => {
 						</div>
 						<div className="about-text">
 							<p>
+								<p>
+									{" "}
+									I've had an interest on the Internet, its potencial and its
+									sub-cultures for as long as I can remember. This interest led
+									me to freelance (part-time) in most areas related to creating
+									and maintaining web projects, from CMS Development, Design,
+									Video and Digital Marketing until I finally decided to make
+									the jump to Full-Stack Web Development through an Intensive
+									Coding Bootcamp.
+								</p>
+								<strong>
+									In 2020 I joined the LeWagon Coding Bootcamp in Lisbon based
+									on Ruby on Rails and Vanilla Javascript{" "}
+								</strong>{" "}
+								and fell in love with the problem solving aspect of coding.
+								Right after the Bootcamp while coding my own projects, I quickly
+								learned the importance of Javascript for User Experience, which
+								led me to learn React through online courses.
+								<p>
+									The amazing ecosystem with creative new solutions coming up
+									everyday in the Javascript world made me decide to jump into
+									Nodejs aswell, so I took a very complete Nodejs Course.
+								</p>
+								<strong>
+									I'm now finally ready to use with my stack as a Javascript
+									Developer using React/Nextjs and Nodejs.{" "}
+								</strong>
+							</p>
+							<br />
+							<AboutHobbies expanded={expanded} setExpanded={setExpanded} />
+
+							{/* <button
+								className="about-button"
+								onClick={() => setShowHobbies(!showHobbies)}
+							>
+								{" "}
+								When I'm not coding...{" "}
+							</button>
+							<AnimatePresence initial={true}>
+								{showHobbies && (
+									<motion.div
+										animate="open"
+										exit="collapsed"
+										variants={{
+											open: { opacity: 1, height: "auto" },
+											collapsed: { opacity: 0, height: 0 },
+										}}
+										transition={{
+											duration: 0.8,
+											ease: [0.04, 0.62, 0.23, 0.98],
+										}}
+									>
+								<AboutHobbies expanded={collapsed} setExpanded={setCollapsed}/>
+
+										<p>
+											When I'm not coding I play bass and guitar, I like to
+											cook, and I used to skate a lot while growing up and even
+											taught kids to skate but now I only go once every few
+											weeks.
+											<p>
+												I also like to watch movies and tv shows, but I always
+												try to be intentional with the media I consume, so I
+												make a conscious effort to only watch interesting movies
+												and TV shows and to read, watch videos or even browse
+												sub-reddits about philosophy, politics, technology and
+												media.{" "}
+											</p>{" "}
+											I also really like to travel and international
+											environments in general, I've studied abroad, did a few
+											Interrail/hitchiking trips, and worked part-time in an
+											Hostel
+										</p>
+									</motion.div>
+								)}
+							</AnimatePresence> */}
+
+							{/* <p>
 								Sempre tive um grande interesse na internet e no seu potencial
 								para criar e divulgar projectos e ideias. Este interesse{" "}
 								<strong>
@@ -90,7 +172,7 @@ const About = () => {
 								</strong>{" "}
 								No meu tempo livre ando de skate, viajo, toco guitarra, vejo
 								filmes e séries e estudo media, tecnologia e marketing.
-							</p>
+							</p> */}
 						</div>
 					</div>
 				</div>
