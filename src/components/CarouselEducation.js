@@ -31,7 +31,7 @@ const CarouselEducation = () => {
 			setCurrent(current + 1 * change);
 		}
 	};
-	console.log(current);
+
 	return (
 		<Section>
 			<ButtonOverlay>
