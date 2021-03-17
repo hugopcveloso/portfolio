@@ -28,8 +28,10 @@
 		width: 90%;
 		h1 {
 			font-size: calc(26px + (64 - 26) * ((100vw - 300px) / (1600 - 300)));
+			margin-bottom: 40px;
 		}
 		p {
+			margin: 0px;
 			font-size: calc(18px + (22 - 18) * ((100vw - 300px) / (1600 - 300)));
 		}
 	}
@@ -46,12 +48,17 @@
 	}
 }
 
+.ponto-virgula {
+	color: yellow;
+}
+
 .cta-banner {
 	transition: padding 1s ease-in-out;
 	display: inline-block;
 	border: none;
 	padding: 10px 20px;
 	margin: 0;
+	margin-top: 30px;
 	text-decoration: none;
 	font-weight: bold;
 	background: #fcf01f;
@@ -89,6 +96,9 @@
 	.banner-container {
 		margin: 0;
 		padding: 0px;
+		.banner-wrapper {
+			margin-top: -60px;
+		}
 	}
 	.header-container {
 		padding: 30px 0px;
@@ -99,17 +109,27 @@
 		width: 100%;
 		padding: 0px 0px 40px 0px;
 		margin-top: 0px;
-		h1 {
-			margin-bottom: 20px;
-		}
+
 		.banner-text-container {
+			padding: 0px;
+			text-align: center;
+			h1 {
+				text-align: left;
+				margin-bottom: 20px;
+			}
+			p {
+				text-align: left;
+			}
+			.cta-banner {
+				text-align: center;
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
 		}
 	}
-	.cta-banner {
-		margin-top: 20px;
-		margin-bottom: 20px;
-	}
+
 	.banner-photo {
+		height: 65vh;
 		svg {
 			max-width: 70vw;
 		}

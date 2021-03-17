@@ -2,6 +2,7 @@ import React from "react";
 import Sidebar from "../components/Sidebar";
 import BannerPhoto from "../images/hugo-newphoto.jpg";
 import Navbar from "./Navbar";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 function Banner() {
 	return (
@@ -13,15 +14,28 @@ function Banner() {
 						<div className="banner-content">
 							<div className="banner-text-container col-md-12 col-lg-6">
 								<h1>
-									Web Developer <br /> &Designer
+									Web Developer <br /> & Designer{" "}
+									<span className="ponto-virgula">;</span>
 								</h1>
 								<p>
-									Hey, my name is Hugo Veloso, I'm a Full-Stack Javascript
-									Developer and this is my Portfolio.
+									Hey, my name is Hugo Veloso
+									<span className="ponto-virgula">;</span>{" "}
 								</p>
-								<a href="#portfolio-section" className="cta-banner">
+								<p>
+									I'm a Full-Stack Javascript Developer{" "}
+									<span className="ponto-virgula">;</span>
+								</p>
+								<Link
+									activeClass="active"
+									className="cta-banner"
+									to="portfolio-section"
+									spy={true}
+									smooth={true}
+									offset={0}
+									duration={800}
+								>
 									Portfolio
-								</a>
+								</Link>
 							</div>
 							<div className="banner-photo col-md-12 col-lg-6">
 								<svg

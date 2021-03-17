@@ -9,8 +9,9 @@ const Job = (props) => {
 		url,
 		localimage,
 		id,
-		description,
 		description_eng,
+		gitAvailable,
+		urlGit,
 		technologies,
 	} = props.job;
 
@@ -26,12 +27,24 @@ const Job = (props) => {
 					<h3 className="job-name">{name}</h3>
 				</div>
 				<p className="job-technologies"> {technologies} </p>
-				<div className={`job-collapsed display-show`}>
+				<div className="job-description-container">
 					<p className="job-description">{description_eng}</p>
-					<a href={url} target="_blank" className=" site-button">
-						{" "}
-						Visitar{" "}
-					</a>
+					<div className="job-links">
+						<a href={url} target="_blank" className=" site-button">
+							{" "}
+							Visitar{" "}
+						</a>
+						{gitAvailable && (
+							<a
+								href={urlGit}
+								target="_blank"
+								className="site-button site-button-github"
+							>
+								{" "}
+								Github{" "}
+							</a>
+						)}
+					</div>
 				</div>
 				<br />
 			</div>
