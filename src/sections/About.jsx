@@ -74,38 +74,36 @@ const About = () => {
 						</div>
 						<div className="about-text">
 							<p>
-								<p>
-									{" "}
-									I've had an interest on the Internet, its potential, its
-									community aspect and even its absurdity for as long as I can
-									remember. This interest led me to freelance (part-time) in
-									most areas related to creating and maintaining web projects,
-									from CMS Development and the Design, Video and Digital
-									Marketing that come with it until I finally decided to make
-									the jump to Full-Stack Web Development through an Intensive
-									Coding Bootcamp.
-								</p>
+								{" "}
+								I've had an interest on the Internet, its potential, its
+								community aspect and even its absurdity for as long as I can
+								remember. This interest led me to freelance (part-time) in most
+								areas related to creating and maintaining web projects, from CMS
+								Development and the Design, Video and Digital Marketing that
+								come with it until I finally decided to make the jump to
+								Full-Stack Web Development through an Intensive Coding Bootcamp.
+							</p>
+							<strong>
+								In 2020 I joined the LeWagon Coding Bootcamp in Lisbon based on
+								Ruby on Rails and Vanilla Javascript and I immediately enjoyed
+								the process of coding.{" "}
+							</strong>{" "}
+							Right after the Bootcamp while coding my own projects, I quickly
+							learned the importance of Javascript for User Experience, which
+							led me to learn React through online courses.
+							<p>
+								The amazing ecosystem with creative new solutions coming up
+								everyday in the Javascript world made me decide to jump into
+								Nodejs aswell, so I took a very complete Nodejs Course.
+							</p>
+							<p>
 								<strong>
-									In 2020 I joined the LeWagon Coding Bootcamp in Lisbon based
-									on Ruby on Rails and Vanilla Javascript and I immediately
-									enjoyed the process of coding.{" "}
-								</strong>{" "}
-								Right after the Bootcamp while coding my own projects, I quickly
-								learned the importance of Javascript for User Experience, which
-								led me to learn React through online courses.
-								<p>
-									The amazing ecosystem with creative new solutions coming up
-									everyday in the Javascript world made me decide to jump into
-									Nodejs aswell, so I took a very complete Nodejs Course.
-								</p>
-								<strong>
-									I'm now finally ready to use with my stack as a Javascript
-									Developer using React/Nextjs and Nodejs.{" "}
+									I feel I'm now ready to start a professional journey as a
+									Javascript Developer using React/Nextjs and Nodejs.{" "}
 								</strong>
 							</p>
 							<br />
 							<AboutHobbies expanded={expanded} setExpanded={setExpanded} />
-
 							{/* <button
 								className="about-button"
 								onClick={() => setShowHobbies(!showHobbies)}
@@ -150,7 +148,6 @@ const About = () => {
 									</motion.div>
 								)}
 							</AnimatePresence> */}
-
 							{/* <p>
 								Sempre tive um grande interesse na internet e no seu potencial
 								para criar e divulgar projectos e ideias. Este interesse{" "}

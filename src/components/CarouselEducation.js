@@ -48,7 +48,7 @@ const CarouselEducation = () => {
 				{educationData.map((el) => {
 					if (current === el.id - 1) {
 						return (
-							<AnimatePresence>
+							<AnimatePresence key={el.id}>
 								<motion.div
 									initial={{ opacity: 0, x: 20 }}
 									animate={{ opacity: 1, x: 0 }}
@@ -74,9 +74,6 @@ const CarouselEducation = () => {
 					}
 				})}
 			</EducationSection>
-
-			<div></div>
-			<div></div>
 		</Section>
 	);
 };
