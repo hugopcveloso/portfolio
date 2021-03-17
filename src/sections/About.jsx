@@ -68,7 +68,7 @@ const About = () => {
 					</div>
 					<div className="about-container col-sm-12 col-lg-6">
 						<div className="about-title">
-							<h2> Sobre mim </h2>
+							<h2> About me </h2>
 							<div className="small-rectangle"> </div>
 							<div className="small-ellipsis"> </div>
 						</div>
@@ -76,19 +76,20 @@ const About = () => {
 							<p>
 								<p>
 									{" "}
-									I've had an interest on the Internet, its potencial and its
-									sub-cultures for as long as I can remember. This interest led
-									me to freelance (part-time) in most areas related to creating
-									and maintaining web projects, from CMS Development, Design,
-									Video and Digital Marketing until I finally decided to make
+									I've had an interest on the Internet, its potential, its
+									community aspect and even its absurdity for as long as I can
+									remember. This interest led me to freelance (part-time) in
+									most areas related to creating and maintaining web projects,
+									from CMS Development and the Design, Video and Digital
+									Marketing that come with it until I finally decided to make
 									the jump to Full-Stack Web Development through an Intensive
 									Coding Bootcamp.
 								</p>
 								<strong>
 									In 2020 I joined the LeWagon Coding Bootcamp in Lisbon based
-									on Ruby on Rails and Vanilla Javascript{" "}
+									on Ruby on Rails and Vanilla Javascript and I immediately
+									enjoyed the process of coding.{" "}
 								</strong>{" "}
-								and fell in love with the problem solving aspect of coding.
 								Right after the Bootcamp while coding my own projects, I quickly
 								learned the importance of Javascript for User Experience, which
 								led me to learn React through online courses.

@@ -24,12 +24,12 @@ export default class MyForm extends React.Component {
 								action="https://formspree.io/xyynoozj"
 								method="POST"
 							>
-								<h4 className="form-title"> Contactos </h4>
+								<h4 className="form-title"> Contact </h4>
 								<label className="form-labels">Email:</label>
 								<br />
 								<input className="form-email" type="email" name="email" />
 								<br />
-								<label className="form-labels">Mensagem:</label>
+								<label className="form-labels">Mensage:</label>
 								<br />
 								<textarea
 									className="form-message"
@@ -39,15 +39,12 @@ export default class MyForm extends React.Component {
 								/>
 								<br />
 								{status === "SUCCESS" ? (
-									<p>Obrigado!</p>
+									<p>Thanks for the message!</p>
 								) : (
-									<button className="form-button">Enviar</button>
+									<button className="form-button">Send</button>
 								)}
 								{status === "ERROR" && (
-									<p>
-										Houve um erro na submissão, tenta dar refresh na página e
-										tentar outra vez
-									</p>
+									<p>There was an issue, please try again later.</p>
 								)}
 							</form>
 						</div>
