@@ -37,7 +37,7 @@ function CarouselEducation() {
 		>
 			{educationData.map((course) => {
 				return (
-					<StyledCarousel.Item className="carousel-item">
+					<StyledCarousel.Item className="carousel-item" key={course.id}>
 						<img
 							className="d-block w-100"
 							src={require(`../images/${course.image}`).default}
@@ -60,6 +60,7 @@ function CarouselEducation() {
 export default CarouselEducation;
 
 const StyledCarousel = styled(Carousel)`
+	padding-top: 60px;
 	width: 80vw;
 
 	margin: 0 auto;

@@ -22,8 +22,8 @@ const AboutHobbies = ({ expanded, setExpanded }) => {
 							collapsed: { opacity: 0, height: 0 },
 						}}
 						transition={{
-							duration: 1,
-							ease: [0.04, 0.62, 0.23, 0.98],
+							duration: 2,
+							ease: [0.04, 0.25, 0.65, 0.98],
 						}}
 					>
 						<p>
