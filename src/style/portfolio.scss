@@ -9,9 +9,21 @@
 	color: white;
 }
 
-.portfolio-title {
-	padding-top: 90px;
-	padding-bottom: 40px;
+.work-title-container {
+	padding-top: 80px;
+	z-index: 10;
+	padding-bottom: 70px;
+	position: relative;
+	margin: 0 auto;
+	width: 50%;
+	.portfolio-title {
+		width: 50%;
+		margin: 0 auto;
+	}
+	//the rectangle and little circle are defined in about.scss
+	.portfolio-shape {
+		margin-top: 80px;
+	}
 }
 
 .display-none {

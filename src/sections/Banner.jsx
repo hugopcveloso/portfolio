@@ -22,7 +22,7 @@ function Banner() {
 									<span className="ponto-virgula">;</span>{" "}
 								</p>
 								<p>
-									I'm a Full-Stack Javascript Developer{" "}
+									I'm a Full-Stack Javascript Developer{""}
 									<span className="ponto-virgula">;</span>
 								</p>
 								<Link

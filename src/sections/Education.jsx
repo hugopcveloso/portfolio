@@ -8,7 +8,7 @@ const Education = () => {
 			<List>
 				{educationData.map((el) => {
 					return (
-						<Certificate checkId={el.id}>
+						<Certificate key={el.id}>
 							<img
 								src={require(`../images/${el.image}`).default}
 								alt={`${el.course_title} certificate`}
@@ -39,10 +39,10 @@ const Certificate = styled.div`
 		font-size: 25px;
 	}
 	img {
-		width: ${(props) => (props.checkId === 1 ? "98%" : "100%")};
+		width: ${(props) => (props.key === 1 ? "98%" : "100%")};
 	}
 	div {
-		padding-top: ${(props) => (props.checkId === 1 ? "10px" : "0px")};
+		padding-top: ${(props) => (props.key === 1 ? "10px" : "0px")};
 
 		padding-left: 10px;
 		padding-right: 10px;
