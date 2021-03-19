@@ -9,8 +9,9 @@ const educationData = [
 			"An intensive Coding Bootcamp where\
     for 3 months we coded more than 8 hours a day, solving challenges,\
     and building 2 full-stack products in a team of 4 students.\
-    My team built great products",
-		tech: "Ruby on Rails, Vanilla Javascript, PostgreSQL, MySQL",
+    Our team always tried to implement complex features to learn as most as we could.",
+		tech:
+			"Ruby on Rails, Vanilla Javascript, PostgreSQL, MySQL, HTML, SCSS, Bootstrap",
 	},
 	{
 		id: 2,
