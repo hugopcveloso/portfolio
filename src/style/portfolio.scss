@@ -16,10 +16,7 @@
 	position: relative;
 	margin: 0 auto;
 	width: 50%;
-	.portfolio-title {
-		width: 50%;
-		margin: 0 auto;
-	}
+
 	//the rectangle and little circle are defined in about.scss
 	.portfolio-shape {
 		margin-top: 80px;
@@ -123,6 +120,9 @@
 }
 
 @media (max-width: 600px) {
+	.work-title-container {
+		width: 100%;
+	}
 	.work-list {
 		grid-template-columns: 1fr;
 		width: 95%;

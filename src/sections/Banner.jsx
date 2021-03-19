@@ -3,7 +3,52 @@ import Sidebar from "../components/Sidebar";
 import BannerPhoto from "../images/hugo-newphoto.jpg";
 import Navbar from "./Navbar";
 import { Link, animateScroll as scroll } from "react-scroll";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+
+const ctaButtonMotion = {
+	rest: {
+		color: "black",
+		x: 0,
+		transition: {
+			duration: 0.3,
+			type: "tween",
+			ease: "easeIn",
+		},
+	},
+	hover: {
+		color: "black",
+		x: -5,
+		transition: {
+			duration: 0.3,
+			type: "tween",
+			ease: "easeOut",
+		},
+	},
+};
+
+const iconMotion = {
+	rest: {
+		opacity: 0,
+		x: 0,
+		y: 2,
+		ease: "easeOut",
+		duration: 0.4,
+		type: "tween",
+		scale: 0.4,
+	},
+	hover: {
+		opacity: 1,
+		x: 7,
+		scale: 0.9,
+		transition: {
+			duration: 0.4,
+			type: "tween",
+			ease: "easeIn",
+		},
+	},
+};
 
 function Banner() {
 	return (
@@ -16,27 +61,43 @@ function Banner() {
 							<div className="banner-text-container col-md-12 col-lg-6">
 								<h1>
 									Web Developer <br /> & Designer{" "}
-									<span className="ponto-virgula">;</span>
+									<motion.span
+										animate={{
+											opacity: [0, 1, 1, 0, 0],
+										}}
+										transition={{
+											repeat: Infinity,
+											duration: 3,
+											stiffness: 100,
+										}}
+										className="ponto-virgula"
+									>
+										;
+									</motion.span>
 								</h1>
-								<p>
-									Hey, my name is Hugo Veloso
-									<span className="ponto-virgula">;</span>{" "}
-								</p>
-								<p>
-									I'm a Full-Stack Javascript Developer{""}
-									<span className="ponto-virgula">;</span>
-								</p>
-								<Link
-									activeClass="active"
-									className="cta-banner"
-									to="portfolio-section"
-									spy={true}
-									smooth={true}
-									offset={0}
-									duration={800}
-								>
-									Portfolio
-								</Link>
+								<p>Hey, my name is Hugo Veloso,</p>
+								<p>and I'm a Full-Stack Javascript Developer{""}</p>
+								<motion.div initial="rest" whileHover="hover" animate="rest">
+									<Link
+										activeClass="active"
+										className="cta-banner"
+										to="portfolio-section"
+										spy={true}
+										smooth={true}
+										offset={0}
+										duration={800}
+									>
+										<motion.span variants={ctaButtonMotion}>
+											Portfolio
+										</motion.span>
+										<motion.span variants={iconMotion}>
+											<FontAwesomeIcon
+												icon={faChevronDown}
+												className="cta-icon"
+											/>
+										</motion.span>
+									</Link>
+								</motion.div>
 							</div>
 							<div className="banner-photo col-md-12 col-lg-6">
 								<motion.div
