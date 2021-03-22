@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import educationData from "../data/education-data";
 import CarouselEducation from "../components/CarouselEducation";
+
 const Education = () => {
 	return (
 		<Section>
