@@ -114,25 +114,25 @@ const workData = [
 		technologies:
 			"Ruby, Ruby on Rails, Javascript, HTML, CSS, Bootstrap, PostgreSQL, GitHub, Figma",
 	},
+	// {
+	// 	id: 7,
+	// 	name: "Efeito Contexto",
+	// 	url: "https://efeitocontexto.com/",
+	// 	urlGit: "https://github.com/hugopcveloso",
+	// 	gitAvailable: false,
+	// 	localimage: "efeito-contexto-screen.jpg",
+	// 	description:
+	// 		"Efeito Contexto é um blog acerca de como os humanos tendem a interagir com informação, baseando o seu conteúdo em psicologia cognitiva e filosofia\
+	// 		É um site criado por mim com a ajuda de alguns amigos, neste projecto tive a oportunidade de desenvolver todo o website, branding e design",
+	// 	description_eng:
+	// 		"Efeito Contexto is a blog about how humans tend to interact with information basing its content on cognitive\
+	// 	psychology and philosophy.\
+	// 	Created by me and some friends, in this project I had the opportunity to develop all of the website, branding\
+	// 	and design.",
+	// 	technologies: "Wordpress, Illustrator, Photoshop.",
+	// },
 	{
 		id: 7,
-		name: "Efeito Contexto",
-		url: "https://efeitocontexto.com/",
-		urlGit: "https://github.com/hugopcveloso",
-		gitAvailable: false,
-		localimage: "efeito-contexto-screen.jpg",
-		description:
-			"Efeito Contexto é um blog acerca de como os humanos tendem a interagir com informação, baseando o seu conteúdo em psicologia cognitiva e filosofia\
-			É um site criado por mim com a ajuda de alguns amigos, neste projecto tive a oportunidade de desenvolver todo o website, branding e design",
-		description_eng:
-			"Efeito Contexto is a blog about how humans tend to interact with information basing its content on cognitive\
-		psychology and philosophy.\
-		Created by me and some friends, in this project I had the opportunity to develop all of the website, branding\
-		and design.",
-		technologies: "Wordpress, Illustrator, Photoshop.",
-	},
-	{
-		id: 8,
 		name: "Comporta App",
 		url: "https://www.comportaapp.com/",
 		urlGit: "https://github.com/hugopcveloso",
