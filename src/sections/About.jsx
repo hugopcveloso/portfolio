@@ -83,14 +83,16 @@ const About = () => {
 								come with it until I finally decided to make the jump to
 								Full-Stack Web Development through an Intensive Coding Bootcamp.
 							</p>
-							<strong>
-								In 2020 I joined the LeWagon Coding Bootcamp in Lisbon based on
-								Ruby on Rails and Vanilla Javascript and I immediately enjoyed
-								the process of coding.{" "}
-							</strong>{" "}
-							Right after the Bootcamp while coding my own projects, I quickly
-							learned the importance of Javascript for User Experience, which
-							led me to learn React through online courses.
+							<p>
+								<strong>
+									In 2020 I joined the LeWagon Coding Bootcamp in Lisbon based
+									on Ruby on Rails and Vanilla Javascript and I immediately
+									enjoyed the process of coding.{" "}
+								</strong>{" "}
+								Right after the Bootcamp while coding my own projects, I quickly
+								learned the importance of Javascript for User Experience, which
+								led me to learn React through online courses.
+							</p>
 							<p>
 								The amazing ecosystem with creative new solutions coming up
 								everyday in the Javascript world made me decide to jump into
