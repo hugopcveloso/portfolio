@@ -22,15 +22,14 @@ const workData = [
 	{
 		id: 2,
 		name: "Media I watched",
-		url: "https://nature-expeditions.herokuapp.com/",
+		url: "https://hugo-veloso.vercel.app/",
 		urlGit: "https://github.com/hugopcveloso/movie-blog",
 		gitAvailable: true,
-		localimage: "altsolutions-screen.jpg",
+		localimage: "mediaiwatched.jpg",
 		description:
 			"Media I watched é uma aplicação full-stack em NextJS para o front-end e NodeJS utilizando o Strapi, um headless CMS\
 			Para a database utilizei PostgreSQL e Cloudinary para upload de fotografias.\
-			O propósito deste projecto foi aprender Strapi que é um Headless CMS e aprender mais a fundo NextJS.\
-			Desenvolvi este projecto em cerca de uma semana",
+			O propósito deste projecto foi aprender Strapi que é um Headless CMS e aprender mais a fundo NextJS.",
 		description_eng:
 			"Media I watched is a full-stack website, with NextJS for the front-end and NodeJS using Strapi for the backend. \
 			For the database I used PostgreSQL and Cloudinary for photo uploads because I was lookint to deploy to Heroku for free\
