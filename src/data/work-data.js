@@ -32,11 +32,12 @@ const workData = [
 			O propósito deste projecto foi aprender Strapi que é um Headless CMS e aprender mais a fundo NextJS.",
 		description_eng:
 			"Media I watched is a full-stack website, with NextJS for the front-end and NodeJS using Strapi for the backend. \
-			For the database I used PostgreSQL and Cloudinary for photo uploads because I was lookint to deploy to Heroku for free\
-			The purpose of this project was to learn more in-depth Strapi which is Headless CMS\
-			and NextJS server side rendering possibilities. \
+			For the database I used PostgreSQL and Cloudinary for photo uploads\
+			The purpose of this project was to familiarize myself with different technologies: Strapi which is Headless CMS\
+			NextJS server side rendering possibilities, Internationalization, page-transitions, React-Query and framer-motion animations.  \
       I developed this project in around a week while learning NextJS",
-		technologies: "NextJS, Javascript, Strapi, PostgreSQL, Cloudinary, Emotion",
+		technologies:
+			"NextJS, React, Javascript, Strapi, PostgreSQL, Cloudinary, Emotion, Framer-Motion",
 	},
 	{
 		id: 3,
