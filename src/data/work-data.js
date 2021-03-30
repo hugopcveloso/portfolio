@@ -22,7 +22,7 @@ const workData = [
 	{
 		id: 2,
 		name: "Media I watched",
-		url: "https://hugo-veloso.vercel.app/",
+		url: "https://mediaiwatched.vercel.app/",
 		urlGit: "https://github.com/hugopcveloso/movie-blog",
 		gitAvailable: true,
 		localimage: "mediaiwatched.jpg",
@@ -34,8 +34,7 @@ const workData = [
 			"Media I watched is a full-stack website, with NextJS for the front-end and NodeJS using Strapi for the backend. \
 			For the database I used PostgreSQL and Cloudinary for photo uploads\
 			The purpose of this project was to familiarize myself with different technologies: Strapi which is Headless CMS\
-			NextJS server side rendering possibilities, Internationalization, page-transitions, React-Query and framer-motion animations.  \
-      I developed this project in around a week while learning NextJS",
+			NextJS server side rendering possibilities, Internationalization, page-transitions, React-Query and framer-motion animations.",
 		technologies:
 			"NextJS, React, Javascript, Strapi, PostgreSQL, Cloudinary, Emotion, Framer-Motion",
 	},
